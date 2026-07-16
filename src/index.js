@@ -1,11 +1,11 @@
-import mongoose from 'mongoose';
-import express from "express"
+import { app } from './app.js';
 import 'dotenv/config'
 import connectDB from './db/index.js';
-const app = express()
 import dns from "dns";
 import { log } from 'console';
 dns.setServers(["1.1.1.1", "8.8.8.8"]);
+
+
 
 connectDB()
 .then(()=>{
@@ -16,6 +16,27 @@ connectDB()
 .catch((err) =>{
     log("Mongo db connection failed !!!", err)
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // const app = express()
 // ( async () => {
